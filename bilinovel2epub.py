@@ -398,14 +398,8 @@ def 主要():
     else:
         书籍ID = str(sys.argv[1]).split("/")[-1].split(".")[0]
         
-    if Confirm.ask("是否分卷输出文件? 分卷[Y] 单文件[N] "):
-        分卷输出 = True
-    else:
-        分卷输出 = False
-    if Confirm.ask("是否下载图片? 下载[Y] 不下载[N] "):
-        下载图片 = True
-    else:
-        下载图片 = False
+    下载图片 = True
+    分卷输出 = True
         # 获得书籍名称
     书籍首页URL = 基础URL + f"/novel/{书籍ID}.html"
     soup = BeautifulSoup(session.get(书籍首页URL,headers=HEARDERS).text, "lxml")
