@@ -1,5 +1,17 @@
 # biliNovel2Epub
 下载 哔哩轻小说 文章至Epub 
+"cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Map987/biliNovel2Epub/blob/main/Untitled33.ipynb\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    
 
 # 使用方法1 
 1. 安装Pyhon3 
