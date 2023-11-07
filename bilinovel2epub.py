@@ -423,6 +423,14 @@ def 主要():
     目录集合 = 远程目录.find_all("li")
     缓存 = 目录集合[0].text
     子章节 = []
+
+    for chapter in 目录[卷名]:
+     if chapter_count >= 2:
+       break
+   
+     chapter_count += 1
+   
+   
     
     for 单个目录 in 目录集合:
         文本 = 单个目录.text
@@ -466,7 +474,7 @@ def 主要():
                         soup = BeautifulSoup(session.get(下一个URL,headers=HEARDERS,timeout=5).text, "lxml")
                     except:
                         console.print(f"第{i + 1}次请求失败,正在重试...")
-                        time.sleep(3)
+                        time.sleep(50)
                     else:
                         break
                 读取参数Script = soup.find("body",{"id":"aread"}).find("script")
