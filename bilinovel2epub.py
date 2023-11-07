@@ -458,8 +458,8 @@ def 主要():
                 下一个URL = 章节[1]
                 
             while True:
-                for i in range(6):
-                    if i >= 5:
+                for i in range(101):
+                    if i >= 100:
                         console.print("[red]错误次数过多!已终止运行!")
                         os._exit(0)
                     try:
